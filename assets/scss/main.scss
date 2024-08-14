@@ -2,8 +2,9 @@
 @import "_assets";
 @import "_root";
 * {
-    // border: 1px solid red;
+    box-sizing: border-box !important;
 }
+$gradient: linear-gradient(90.66deg, #F1F4F5 -1.4%, #10A0FF -1.4%, #1893FF 10.87%, #5582FF 24.48%, #9973FF 38.6%, #D865E5 50.7%, #E285E8 58.77%, #F2815C 65.32%, #FD823A 71.87%, #FE8521 80.95%, #FCBF5B 99.43%);
 body,
 html {
     font-family: "Inter", system-ui !important;
@@ -43,6 +44,9 @@ a {
     font-size: 14px !important;
     font-weight: 400 !important;
 }
+.fs-12 {
+    font-size: 12px !important;
+}
 .catalog__head {
     border-bottom: 2px solid #d6d6d6 !important;
 }
@@ -69,4 +73,44 @@ a {
 }
 input {
     outline: 0px none !important;
+}
+.btn-orange {
+    background-color: #FF7F00 !important;
+    color: #fff !important;
+}
+.align-center {
+    display: flex !important;
+    align-items: center !important;
+    align-self: center !important;
+}
+.wh-16 {
+    width: 16px;
+    height: 16px;
+}
+.btn-blue {
+    background-color: #149CFF1A !important;
+}
+.img-container {
+    display: flex;
+    gap: 10px;
+}
+.img-container img {
+    max-width: 80px;
+}
+.bg-white {
+    background-color: white !important;
+}
+.gradient-text {
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.color-blue {
+    color: #149CFF !important;
+}
+.catalog__banknote-card-img-wrapper {
+    position: relative;
+}
+.ml-10 {
+    margin-left: 10px !important;
 }
